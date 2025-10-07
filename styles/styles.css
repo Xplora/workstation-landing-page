@@ -32,7 +32,8 @@ body {
 
 
 header {
-    background:url(../img/header-img.png) no-repeat center center/cover;
+  background:url(../img/header-img.png) no-repeat center center/cover;
+  height: 100vh;
 }
 
 .nav-bar {
@@ -80,12 +81,16 @@ header {
 }
 
 .menu .nav-menu ul li a {
-    font-size: 17px;
     padding:20px; 
     font-weight: 500;
     color: #FFFFFF;
     display: block; 
 }
+
+.menu .nav-menu ul li a:hover{
+    color: #d2f2f7!important;
+}
+
 
 .menu .nav-menu ul li a:hover {
     color: #019392;
@@ -152,7 +157,7 @@ header {
     padding: 5px;
     font-size: 18px;
     font-weight: 700;
-    color: #FFF;
+    color: #f3d9d9;
     border-radius: 15px;
     width: 250px;
 }
@@ -292,6 +297,9 @@ header {
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: inset 0 0 22px 5px rgba(7, 7, 7, 0.151);
+    border-radius: 20px;
 }
 
 .mission-container {
@@ -411,7 +419,7 @@ header {
 
 .how-it-works-section {
     background-color: #318C8B;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
 .section-title.white h2 {
@@ -423,17 +431,15 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-top: 40px;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 30px 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -441,12 +447,13 @@ header {
 }
 
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-bottom: 20px;
+  width: 100%;
+  border: #00000033 1px solid;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .card h3 {
@@ -456,10 +463,11 @@ header {
 }
 
 .card ol {
-    text-align: left;
-    padding-left: 20px;
-    color: #333;
-    font-size: 15px;
+  padding: 10px 20px;
+  text-align: left;
+  padding-left: 20px;
+  color: #333;
+  font-size: 15px;
 }
 
 
@@ -920,12 +928,13 @@ header {
 }
 
 .team-card {
-    background-color: #fff;
+    background-color: #e2dfdf71;
     padding: 25px 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    border: #00000033 1px solid;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10);
 }
 
 .team-card:hover {
@@ -939,7 +948,6 @@ header {
     border-radius: 50%;
     object-fit: cover; 
     margin-bottom: 15px;
-    border: 4px solid #C1EFFF; 
 }
 
 .team-card h3 {
